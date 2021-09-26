@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'test-assignment-yamaguchi',
+    titleTemplate: '%s — Тестовое задание для YAMAGUCHI',
     htmlAttrs: {
       lang: 'en'
     },
