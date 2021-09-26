@@ -6,7 +6,7 @@ export default {
   head: {
     titleTemplate: '%s — Тестовое задание для YAMAGUCHI',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
