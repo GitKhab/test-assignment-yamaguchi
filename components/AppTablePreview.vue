@@ -1,0 +1,83 @@
+<template>
+  <div class="table-preview">
+    <img
+      class="table-preview__image table-preview__image_top"
+      src="@/assets/img/table/table-part-top.png"
+      alt="Верхняя часть столешницы"
+    >
+    <img
+      class="table-preview__image table-preview__image_bottom"
+      src="@/assets/img/table/table-part-bottom.png"
+      alt="Нижняя часть столешницы"
+    >
+    <div class="table-preview__buttons">
+      <button class="table-preview__button table-preview__button_lift">вверх</button>
+      <button class="table-preview__button table-preview__button_lower">вниз</button>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'AppTablePreview'
+  }
+</script>
+
+<style lang="scss">
+  .table-preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  .table-preview__image {
+    position: relative;
+    grid-area: 1 / 1 / 6 / 5;
+    width: 100%;
+  }
+
+  .table-preview__image_top {
+    z-index: 500;
+    top: 0;
+    transition: top 0.3s;
+  }
+
+  .table-preview__image_bottom {
+    z-index: 550;
+  }
+
+  .table-preview__buttons {
+    position: relative;
+    z-index: 600;
+    grid-area: 3 / 2 / 5 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .table-preview__button {
+    flex-shrink: 0;
+    width: calc(50px + 3vw);
+    height: calc(50px + 3vw);
+    min-width: 61px;
+    min-height: 61px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    font-family: $fonts-ubuntu;
+    font-size: 12px;
+    line-height: 1.7;
+    background-color: #a6ffff;
+    cursor: pointer;
+  }
+
+  .table-preview__button_lift {
+    margin-right: 23px;
+  }
+
+  .table-preview__button_lower {}
+</style>
