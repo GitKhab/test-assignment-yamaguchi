@@ -58,6 +58,7 @@
   .voice-assistant__image {
     position: relative;
     width: 100%;
+    min-height: 392px;
     transform: translateY(800px);
   }
 
