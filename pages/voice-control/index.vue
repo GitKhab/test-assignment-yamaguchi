@@ -173,6 +173,7 @@
 
     .voice__image {
       object-fit: contain;
+      min-width: 734px;
     }
 
     .voice__command {
