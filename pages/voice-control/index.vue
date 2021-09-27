@@ -14,8 +14,7 @@
         Произнесите одну из&nbsp;доступных команд. Если&nbsp;произнесённая команда распознана, вы&nbsp;услышите ответ
         и&nbsp;кресло приступит к&nbsp;выполнению запроса.
       </p>
-      <!-- TODO: Заменить заглушку на ассистента -->
-      <div class="voice__assistant">*assistant*</div>
+      <TheVoiceAssistant class="voice__assistant" />
       <div class="voice__image-wrapper">
         <img class="voice__image" src="@/assets/img/voice-chat.png" alt="Чат с голосовым помощником Yamaguchi">
       </div>
