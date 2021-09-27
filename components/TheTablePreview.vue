@@ -70,7 +70,7 @@
   }
 
   .table-preview__image_lifted {
-    top: calc(var(--table-shift-value) * -1);
+    top: calc(-1 * var(--table-shift-value));
   }
 
   .table-preview__image_lowered {
