@@ -96,7 +96,7 @@
     font-family: $fonts-ubuntu;
     font-size: 12px;
     line-height: 1.7;
-    background-color: #a6ffff;
+    background-color: $cyan-pale;
     cursor: pointer;
   }
 

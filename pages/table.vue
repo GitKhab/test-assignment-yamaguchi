@@ -38,7 +38,7 @@
 
   .table {
     flex-grow: 1;
-    background-color: #f3f3f3;
+    background-color: $white-smoke;
   }
 
   .table__inner {
@@ -51,7 +51,7 @@
     margin: 0 60px 20px 0;
     font-family: $fonts-bebas-neue;
     font-size: 38px;
-    color: #0b64fe;
+    color: $blue-dodger;
   }
 
   .table__paragraph {
