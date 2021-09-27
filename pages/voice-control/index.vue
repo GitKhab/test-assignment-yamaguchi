@@ -17,7 +17,7 @@
         <img class="voice__image" src="@/assets/img/voice-chat.png" alt="Чат с голосовым помощником Yamaguchi">
       </div>
       <!-- TODO: Заменить заглушку на голосовую команду -->
-      <div class="voice__command">*assistant*</div>
+      <div class="voice__command">*voice command*</div>
     </div>
   </div>
 </template>
