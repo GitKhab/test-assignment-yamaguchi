@@ -32,3 +32,40 @@
     }
   }
 </script>
+
+<style lang="scss">
+  @import '~@/assets/scss/fonts/bebas-neue.scss';
+  @import '~@/assets/scss/fonts/ubuntu.scss';
+
+  .table {
+    flex-grow: 1;
+    background-color: #f3f3f3;
+  }
+
+  .table__inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  .table__title {
+    margin: 0 60px 20px 0;
+    color: #0b64fe;
+    font-family: $fonts-bebas-neue;
+    font-size: 38px;
+  }
+
+  .table__paragraph {
+    margin: 0;
+    font-family: $fonts-ubuntu;
+    line-height: 1.7;
+  }
+
+  .table__paragraph_1 {}
+
+  .table__paragraph_2 {}
+
+  .table__preview {
+    margin: 50px 0;
+  }
+</style>
