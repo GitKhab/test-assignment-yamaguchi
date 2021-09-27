@@ -88,12 +88,8 @@
 
   .table-preview__button {
     flex-shrink: 0;
-    width: calc(50px + 3vw);
-    height: calc(50px + 3vw);
-    min-width: 61px;
-    min-height: 61px;
-    max-width: 200px;
-    max-height: 200px;
+    width: 61px;
+    height: 61px;
     padding: 0;
     border: none;
     border-radius: 50%;
