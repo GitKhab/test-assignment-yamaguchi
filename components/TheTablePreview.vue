@@ -20,7 +20,7 @@
 
 <script>
   export default {
-    name: 'AppTablePreview',
+    name: 'TheTablePreview',
     computed: {
       tablePosition() {
         return this.$store.state.table.position
