@@ -2,6 +2,7 @@
   <div class="table-preview">
     <img
       class="table-preview__image table-preview__image_top"
+      :class="dynamicImageStyles"
       src="@/assets/img/table/table-part-top.png"
       alt="Верхняя часть столешницы"
     >
@@ -11,15 +12,34 @@
       alt="Нижняя часть столешницы"
     >
     <div class="table-preview__buttons">
-      <button class="table-preview__button table-preview__button_lift">вверх</button>
-      <button class="table-preview__button table-preview__button_lower">вниз</button>
+      <button class="table-preview__button table-preview__button_lift" @click="liftTable">вверх</button>
+      <button class="table-preview__button table-preview__button_lower" @click="lowerTable">вниз</button>
     </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'AppTablePreview'
+    name: 'AppTablePreview',
+    computed: {
+      tablePosition() {
+        return this.$store.state.table.position
+      },
+      dynamicImageStyles() {
+        return {
+          'table-preview__image_lifted': this.tablePosition === 'top',
+          'table-preview__image_lowered': this.tablePosition === 'bottom'
+        }
+      }
+    },
+    methods: {
+      liftTable() {
+        return this.$store.dispatch('table/liftTable')
+      },
+      lowerTable() {
+        return this.$store.dispatch('table/lowerTable')
+      }
+    }
   }
 </script>
 
@@ -30,6 +50,7 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
+    padding-top: 10px;
   }
 
   .table-preview__image {
@@ -46,6 +67,14 @@
 
   .table-preview__image_bottom {
     z-index: 550;
+  }
+
+  .table-preview__image_lifted {
+    top: -10px;
+  }
+
+  .table-preview__image_lowered {
+    top: 10px;
   }
 
   .table-preview__buttons {
