@@ -83,4 +83,15 @@
   }
 
   .voice__command {}
+
+  @media screen and (min-width: 640px) {
+    .voice__image-wrapper {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .voice__image {
+      width: 100%;
+    }
+  }
 </style>
