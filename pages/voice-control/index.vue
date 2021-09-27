@@ -137,4 +137,50 @@
       font-size: 62px;
     }
   }
+
+  @media screen and (min-width: 1920px) {
+    .voice {
+      display: flex;
+      background-image: radial-gradient($black-jet 2px, transparent 0);
+      background-size: 30px 30px;
+    }
+
+    .voice__inner {
+      display: grid;
+      grid-template-areas: 'title . assistant . image'
+                           'paragraph-1 . assistant . image'
+                           'paragraph-2 . assistant . image'
+                           'command command assistant . image'
+                           '. . assistant . image';
+      grid-template-columns: 586px 145px 250px 65px auto;
+      max-width: 1780px;
+      margin: auto;
+    }
+
+    .voice__title {
+      font-size: 56px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+
+    .voice__paragraph {
+      font-size: 22px;
+    }
+
+    .voice__assistant {
+      max-width: 250px;
+    }
+
+    .voice__image {
+      object-fit: contain;
+    }
+
+    .voice__command {
+      margin-top: 45px;
+    }
+
+    .voice .voice-command__row_2 {
+      margin-left: 60px;
+    }
+  }
 </style>
