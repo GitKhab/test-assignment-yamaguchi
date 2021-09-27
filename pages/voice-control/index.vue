@@ -37,15 +37,34 @@
 </script>
 
 <style lang="scss">
-  .voice {}
+  @import '~@/assets/scss/fonts/montserrat.scss';
 
-  .voice__inner {}
+  .voice {
+    font-family: $fonts-montserrat;
+    background-color: $black-nero;
+    color: #fff;
+  }
 
-  .voice__title {}
+  .voice__inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 17px 15px;
+  }
 
-  .voice__paragraph {}
+  .voice__title {
+    margin: 0 0 33px 0;
+    font-size: 34px;
+    font-weight: 400;
+  }
 
-  .voice__paragraph_1 {}
+  .voice__paragraph {
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .voice__paragraph_1 {
+    margin-bottom: 20px;
+  }
 
   .voice__paragraph_2 {}
 
