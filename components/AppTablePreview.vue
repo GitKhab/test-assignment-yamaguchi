@@ -50,7 +50,7 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
-    padding-top: 10px;
+    padding-top: var(--table-shift-value);
   }
 
   .table-preview__image {
@@ -70,11 +70,11 @@
   }
 
   .table-preview__image_lifted {
-    top: -10px;
+    top: calc(var(--table-shift-value) * -1);
   }
 
   .table-preview__image_lowered {
-    top: 10px;
+    top: var(--table-shift-value);
   }
 
   .table-preview__buttons {

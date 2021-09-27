@@ -3,6 +3,8 @@
 </template>
 
 <style lang="scss">
+  @import '~@/assets/scss/root.scss';
+
   html {
     height: 100%;
   }
