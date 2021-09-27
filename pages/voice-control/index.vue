@@ -133,7 +133,7 @@
     }
 
     .voice .voice-command__row_2 {
-      margin-left: 40px;
+      margin-left: 20px;
       font-size: 62px;
     }
   }
