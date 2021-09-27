@@ -19,8 +19,7 @@
       <div class="voice__image-wrapper">
         <img class="voice__image" src="@/assets/img/voice-chat.png" alt="Чат с голосовым помощником Yamaguchi">
       </div>
-      <!-- TODO: Заменить заглушку на голосовую команду -->
-      <div class="voice__command">*voice command*</div>
+      <TheVoiceCommand class="voice__command" />
     </div>
   </div>
 </template>
@@ -95,6 +94,16 @@
 
     .voice__image {
       width: 100%;
+    }
+
+    .voice .voice-command__row_1 {
+      margin-bottom: 18px;
+      font-size: 45px;
+    }
+
+    .voice .voice-command__row_2 {
+      margin-left: 60px;
+      font-size: 62px;
     }
   }
 </style>
