@@ -49,9 +49,9 @@
 
   .table__title {
     margin: 0 60px 20px 0;
-    color: #0b64fe;
     font-family: $fonts-bebas-neue;
     font-size: 38px;
+    color: #0b64fe;
   }
 
   .table__paragraph {
