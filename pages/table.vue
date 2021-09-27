@@ -67,4 +67,12 @@
   .table__preview {
     margin: 50px 0;
   }
+
+  @media screen and (min-width: 640px) {
+    .table .table-preview__button {
+      width: 100px;
+      height: 100px;
+      font-size: 16px;
+    }
+  }
 </style>
