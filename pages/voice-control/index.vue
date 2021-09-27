@@ -92,7 +92,7 @@
                            'paragraph-1 paragraph-1'
                            'paragraph-2 paragraph-2'
                            'assistant image'
-                           'assistant command'
+                           'assistant command';
     }
 
     .voice__title {
