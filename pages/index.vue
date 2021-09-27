@@ -39,3 +39,46 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .home {
+    padding: 12px;
+  }
+
+  .home__title {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .home__title_h1 {
+    margin-bottom: 24px;
+  }
+
+  .home__title_h2 {
+    margin-bottom: 12px;
+  }
+
+  .home__section {}
+
+  .home__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .home__list_level_1 {}
+
+  .home__list_level_2 {
+    padding-left: 24px;
+  }
+
+  .home__list-item {
+    margin: 5px 0;
+  }
+
+  .home__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+</style>
