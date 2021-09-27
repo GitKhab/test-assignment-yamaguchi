@@ -13,7 +13,9 @@
       </p>
       <!-- TODO: Заменить заглушку на ассистента -->
       <div class="voice__assistant">*assistant*</div>
-      <img class="voice__image" src="@/assets/img/voice-chat.png" alt="Чат с голосовым помощником Yamaguchi">
+      <div class="voice__image-wrapper">
+        <img class="voice__image" src="@/assets/img/voice-chat.png" alt="Чат с голосовым помощником Yamaguchi">
+      </div>
       <!-- TODO: Заменить заглушку на голосовую команду -->
       <div class="voice__command">*assistant*</div>
     </div>
@@ -69,7 +71,16 @@
 
   .voice__assistant {}
 
-  .voice__image {}
+  .voice__image-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 25px -15px;
+  }
+
+  .voice__image {
+    width: 110%;
+  }
 
   .voice__command {}
 </style>
