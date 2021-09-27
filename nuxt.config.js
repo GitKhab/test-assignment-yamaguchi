@@ -32,7 +32,10 @@ export default {
     '@nuxtjs/eslint-module',
 
     // https://github.com/nuxt-community/style-resources-module
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+
+    // https://www.npmjs.com/package/nuxt-gsap-module
+    'nuxt-gsap-module'
   ],
 
   // Do not import actual styles. Use styleResources module only to import variables,
