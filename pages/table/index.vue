@@ -37,7 +37,6 @@
   @import '~@/assets/scss/fonts/ubuntu.scss';
 
   .table {
-    flex-grow: 1;
     background-color: $white-smoke;
   }
 
