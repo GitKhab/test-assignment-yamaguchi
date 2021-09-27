@@ -13,8 +13,7 @@
       </p>
       <!-- TODO: Заменить заглушку на ассистента -->
       <div class="voice__assistant">*assistant*</div>
-      <!-- TODO: Добавить путь к изображению -->
-      <img class="voice__image" src="#" alt="Чат с голосовым помощником Yamaguchi">
+      <img class="voice__image" src="@/assets/img/voice-chat.png" alt="Чат с голосовым помощником Yamaguchi">
       <!-- TODO: Заменить заглушку на голосовую команду -->
       <div class="voice__command">*assistant*</div>
     </div>
