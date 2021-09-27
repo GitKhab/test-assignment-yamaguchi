@@ -86,7 +86,33 @@
   .voice__command {}
 
   @media screen and (min-width: 640px) {
+    .voice__inner {
+      display: grid;
+      grid-template-areas: 'title title'
+                           'paragraph-1 paragraph-1'
+                           'paragraph-2 paragraph-2'
+                           'assistant image'
+                           'assistant command'
+    }
+
+    .voice__title {
+      grid-area: title;
+    }
+
+    .voice__paragraph_1 {
+      grid-area: paragraph-1;
+    }
+
+    .voice__paragraph_2 {
+      grid-area: paragraph-2;
+    }
+
+    .voice__assistant {
+      grid-area: assistant;
+    }
+
     .voice__image-wrapper {
+      grid-area: image;
       margin-right: 0;
       margin-left: 0;
     }
@@ -95,13 +121,19 @@
       width: 100%;
     }
 
+    .voice__command {
+      grid-area: command;
+      position: relative;
+      z-index: 1000;
+    }
+
     .voice .voice-command__row_1 {
       margin-bottom: 18px;
       font-size: 45px;
     }
 
     .voice .voice-command__row_2 {
-      margin-left: 60px;
+      margin-left: 40px;
       font-size: 62px;
     }
   }
