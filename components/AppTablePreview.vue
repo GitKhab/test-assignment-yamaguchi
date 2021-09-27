@@ -98,6 +98,9 @@
     line-height: 1.7;
     background-color: $cyan-pale;
     cursor: pointer;
+    &:hover {
+      background-color: darken($cyan-pale, 10%);
+    }
   }
 
   .table-preview__button_lift {
