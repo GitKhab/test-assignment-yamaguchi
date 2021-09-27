@@ -35,3 +35,23 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .voice {}
+
+  .voice__inner {}
+
+  .voice__title {}
+
+  .voice__paragraph {}
+
+  .voice__paragraph_1 {}
+
+  .voice__paragraph_2 {}
+
+  .voice__assistant {}
+
+  .voice__image {}
+
+  .voice__command {}
+</style>
