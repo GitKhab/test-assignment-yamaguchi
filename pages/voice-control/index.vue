@@ -1,7 +1,10 @@
 <template>
   <div class="voice">
     <div class="voice__inner">
-      <h1 class="voice__title">Yamaguchi Voice Control</h1>
+      <h1 class="voice__title">
+        Yamaguchi <br>
+        Voice Control
+      </h1>
       <p class="voice__paragraph voice__paragraph_1">
         Вы&nbsp;можете управлять программами массажа или&nbsp;самим креслом с&nbsp;помощью голосовых команд, приведённых
         ниже. Коснитесь кратковременно кнопки голосового управления, расположенной на&nbsp;левом подлокотнике,
