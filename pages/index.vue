@@ -42,6 +42,7 @@
 
 <style lang="scss">
   .home {
+    font-family: $fonts-safe;
     padding: 12px;
   }
 
