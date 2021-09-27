@@ -75,4 +75,67 @@
       font-size: 16px;
     }
   }
+
+  @media screen and (min-width: 1640px) {
+    .table {
+      --table-shift-value: 20px;
+      display: flex;
+    }
+
+    .table__inner {
+      display: grid;
+      grid-template-areas: 'preview title'
+                           'preview paragraph-1'
+                           'preview paragraph-2'
+                           'preview .';
+      grid-template-columns: 860px 500px;
+      grid-template-rows: repeat(3, auto) auto;
+      grid-column-gap: 90px;
+      max-width: 1460px;
+      margin: auto;
+      padding: 25px 90px;
+    }
+
+    .table__title {
+      grid-area: title;
+      margin-right: 0;
+      margin-bottom: 35px;
+      font-family: $fonts-ubuntu;
+      font-size: 62px;
+      line-height: 1;
+      font-weight: 300;
+    }
+
+    .table__paragraph {
+      font-size: 22px;
+    }
+
+    .table__paragraph_1 {
+      grid-area: paragraph-1;
+      margin-bottom: 35px;
+    }
+
+    .table__paragraph_2 {
+      grid-area: paragraph-2;
+    }
+
+    .table__preview {
+      grid-area: preview;
+      padding: 0;
+    }
+
+    .table .table-preview__buttons {
+      margin-top: 65px;
+    }
+
+    .table .table-preview__button {
+      width: 200px;
+      height: 200px;
+      font-size: 40px;
+    }
+
+    .table .table-preview__button_lift {
+      margin-right: 75px;
+    }
+  }
 </style>
