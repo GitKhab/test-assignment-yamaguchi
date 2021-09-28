@@ -87,6 +87,7 @@
   }
 
   .table-preview__button {
+    @include focus-visible(5px, $blue-dodger);
     flex-shrink: 0;
     width: 61px;
     height: 61px;
