@@ -77,7 +77,7 @@
 
   @media screen and (min-width: 1640px) {
     .table {
-      --table-shift-value: 20px;
+      --table-shift: 20px;
       display: flex;
     }
 
